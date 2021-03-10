@@ -10,15 +10,15 @@ Antes de empezar, asegúrese de cumplir con los siguientes requisitos:
 
 * Python 3 o superior.
 * Módulo [Requests](https://pypi.org/project/requests/) para Python.
-* 
-       ```
+
+```
             pip install requests
-       ```
+```
 * Módulo [Beautiful Soup 4](https://pypi.org/project/beautifulsoup4/) para Python.
-* 
-       ```
+ 
+```
             pip install beautifulsoup4
-       ```
+```
 
 ## Instación de InfoDeDateas
 

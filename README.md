@@ -1,47 +1,43 @@
-# MarianoTV
+# InfoDeDateas
 
-MarianoTV opens random videos in a determined folder (all subfolders included) with [VLC](https://www.videolan.org/vlc/index.es.html). Creates a registry to store watched videos not to repeat them.
+[Dateas](https://www.dateas.com/) recopila información de personas en Argentina.
+InfoDeDateas utiliza un archivos de excel con nombres de personas para buscarlos individualmente en Dateas y obtener su número de CUIL. Luego los guarda ordenadamente en una copia de dicho excel.
 
-## Prerequisites
+## Prerequisitos
 
-Before you begin, ensure you have met the following requirements:
+Antes de empezar, asegúrese de cumplir con los siguientes requisitos:
 
-* You have installed the latest version of [VLC](https://www.videolan.org/vlc/index.es.html).
-* Python 3 or higher.
+* Python 3 o superior.
+* Módulo [Requests](https://pypi.org/project/requests/) para Python.
+       ```
+            pip install requests
+       ```
+* Módulo [Beautiful Soup 4](https://pypi.org/project/beautifulsoup4/) para Python.
+       ```
+            pip install beautifulsoup4
+       ```
 
-## Installing MarianoTV
+## Instación de InfoDeDateas
 
-To install MarianoTV, follow these steps:
+Para instalar InfoDeDateas, siga los siguientes pasos:
 
-* Download MarianoTV.py
-* Move it to the folder where you have all your videos (remember it includes all subfolders).
-* By default, in MarianoTV.py, VLC.exe path is set to C:\Program Files (x86)\VideoLAN\VLC\vlc.exe". You may have to edit that line:
+* Descargue InfoDeDateas.py
+* Cambie la ruta del archivo excel a utilizar:
 ```python
-    vlc = r"C:\Program Files (x86)\VideoLAN\VLC\vlc.exe" #Path of VLC.exe
+    wb = openpyxl.load_workbook(r'c:\users\Mariano\desktop\Nombres.xlsx') #Path de un excel con lista de nombres
 ```
 
-## Using MarianoTV
+## Uso de InfoDeDateas
 
-* Just double click on MarianoTV.py (I recommend creating a desktop shortcut). It will open a console window that will start playing random videos.
-* To correctly close this program, Alt+Tab to console and press Enter (if closed other way it may corrupt the registry).
+* Asegúrese de tener acceso a internet.
+* Corra el programa InfoDeDateas.py en su computadora.
+* Automáticamente va a obtener informacion de www.dateas.com y guardarla en un excel al finalizar. La ruta del nuevo archivo excel va a ser su (CWD)[https://linuxize.com/post/python-get-change-current-working-directory/#:~:text=To%20find%20the%20current%20working,chdir(path)%20], el cual es sencillo de obtener o cambiar (véase https://linuxize.com/post/python-get-change-current-working-directory/#:~:text=To%20find%20the%20current%20working,chdir(path)%20 para mas detalles).
 
-### Other functions
 
-* There is a watched videos counter. If it reaches 300 it will reset the watched list.
-```python
-    if contador > 300: #If we have watched more than 300 videos 
-      f = open('CapitulosVistos.txt', 'w')    #Reset the list to start again
+## Contacto
 
-```
-* There is a 10% chance you get a repeated video
-```python
-    if random.randint(1,10) == 1: #There is a 10% chance to watch a video you have already seen
-```
-
-## Contact
-
-If you want to contact me you can reach me at Mariano_Desivo@hotmail.com.
+Puede contactarme mediante mi dirección de email, Mariano_Desivo@hotmail.com.
 
 ## License
 
-This project uses the following license: [MIT License](https://github.com/MarianoDesivo/MarianoTV/blob/main/LICENSE).
+Este proyecto usa la siguiente licencia: [MIT License](https://github.com/MarianoDesivo/InfoDeDateas/blob/main/LICENSE).

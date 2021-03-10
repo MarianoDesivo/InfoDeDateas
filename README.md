@@ -1,6 +1,7 @@
 # InfoDeDateas
 
 [Dateas](https://www.dateas.com/) recopila información de personas en Argentina.
+
 InfoDeDateas utiliza un archivos de excel con nombres de personas para buscarlos individualmente en Dateas y obtener su número de CUIL. Luego los guarda ordenadamente en una copia de dicho excel.
 
 ## Prerequisitos

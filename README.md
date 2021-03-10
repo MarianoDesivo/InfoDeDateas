@@ -10,10 +10,12 @@ Antes de empezar, asegúrese de cumplir con los siguientes requisitos:
 
 * Python 3 o superior.
 * Módulo [Requests](https://pypi.org/project/requests/) para Python.
+* 
        ```
             pip install requests
        ```
 * Módulo [Beautiful Soup 4](https://pypi.org/project/beautifulsoup4/) para Python.
+* 
        ```
             pip install beautifulsoup4
        ```
@@ -32,7 +34,7 @@ Para instalar InfoDeDateas, siga los siguientes pasos:
 
 * Asegúrese de tener acceso a internet.
 * Corra el programa InfoDeDateas.py en su computadora.
-* Automáticamente va a obtener informacion de www.dateas.com y guardarla en un excel al finalizar. La ruta del nuevo archivo excel va a ser su (CWD)[https://linuxize.com/post/python-get-change-current-working-directory/#:~:text=To%20find%20the%20current%20working,chdir(path)%20], el cual es sencillo de obtener o cambiar (véase https://linuxize.com/post/python-get-change-current-working-directory/#:~:text=To%20find%20the%20current%20working,chdir(path)%20 para mas detalles).
+* Automáticamente va a obtener informacion de www.dateas.com y guardarla en un excel al finalizar. La ruta del nuevo archivo excel va a ser su [CWD](https://linuxize.com/post/python-get-change-current-working-directory/#:~:text=To%20find%20the%20current%20working,chdir(path)%20), el cual es sencillo de obtener o cambiar (véase [python get change current working directory](https://linuxize.com/post/python-get-change-current-working-directory/#:~:text=To%20find%20the%20current%20working,chdir(path)%20) para mas detalles).
 
 
 ## Contacto
